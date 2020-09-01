@@ -6,12 +6,6 @@
   flex-direction: column;
 }
 
-.header {
-  height: 60px;
-  background-color: wheat;
-  border-bottom: 1.5px solid #ddd;
-}
-
 .container {
   flex: 1;
   display: flex;
@@ -30,4 +24,17 @@
 
 .footer p {
   padding: 2px 0px;
+}
+
+.clickable {
+  cursor: pointer;
+  color:#39afe6;
+}
+
+.clickable:hover {
+  color: rgb(21, 101, 126);
+}
+
+.clickable:focus {
+  color: #fff;
 }

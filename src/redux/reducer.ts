@@ -4,18 +4,16 @@ import { ActionTypes } from '../constants/ActionTypes';
 export interface IState {
   loading: boolean,
   username: string | null,
-  showErrorModal: boolean,
-  showLoginModal: boolean,
-  showPostThreadModal: boolean,
+  shouldShowErrorModal: boolean,
+  shouldShowAuthModal: boolean,
   theme: AppTheme,
 }
 
 const initialState: IState = {
   loading: false,
   username: null,
-  showErrorModal: false,
-  showLoginModal: false,
-  showPostThreadModal: false,
+  shouldShowErrorModal: false,
+  shouldShowAuthModal: false,
   theme: AppTheme.LIGHT
 }
 
@@ -25,6 +23,26 @@ const rootReducer = (state: IState = initialState, action: any): IState => {
       return {
         ...state,
         theme: action.theme
+      }
+    case ActionTypes.SHOW_AUTH_MODAL:
+      return {
+        ...state,
+        shouldShowAuthModal: true
+      }
+    case ActionTypes.HIDE_AUTH_MODAL:
+      return {
+        ...state,
+        shouldShowAuthModal: false
+      }
+    case ActionTypes.LOGIN:
+      return {
+        ...state,
+        username: action.username
+      }
+    case ActionTypes.LOGOUT:
+      return {
+        ...state,
+        username: null
       }
     default:
       return state;

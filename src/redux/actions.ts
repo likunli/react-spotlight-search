@@ -7,7 +7,19 @@ export interface IChangeThemeAction {
   type: ActionTypes
 }
 
-export const changeTheme = (theme: AppTheme): IChangeThemeAction => ({
+
+export const changeThemeAction = (theme: AppTheme): IChangeThemeAction => ({
   theme,
   type: ActionTypes.CHANGE_THEME
 });
+
+export const showAuthModalAction = () => ({ type: ActionTypes.SHOW_AUTH_MODAL });
+
+export const hideAuthModalAction = () => ({ type: ActionTypes.HIDE_AUTH_MODAL });
+
+export const loginAction = (username: string) => ({
+  type: ActionTypes.LOGIN,
+  username
+});
+
+export const logoutAction = () => ({ type: ActionTypes.LOGOUT });

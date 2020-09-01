@@ -1,0 +1,72 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.4rem;
+  margin: 0 0 0.8rem;
+}
+
+
+.modal-content {
+  padding: 1rem;
+  width: 15rem;
+  position: relative;
+  max-width: 100%;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: rgb(227, 228, 241);
+  border-radius: 20px;
+}
+
+.modal-header {
+  flex: 0;
+  height: 30px;
+}
+
+.modal-body {
+  flex: 1;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  direction: ltr;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  background-color: rgb(194, 69, 69);
+}
+
+.submit-btn, .cancel-btn {
+  width: 60px;
+  font-size: 0.9rem;
+  border-radius: 17px;
+  margin: 0 3px 0 3px;
+}
+
+.text-box {
+  margin-bottom: 0.9rem;
+}
+
+/* .prompt-box {
+  margin-top: 0.7rem;
+  font-size: 0.88rem;
+}
+
+span.create-acc, span.login-acc {
+  margin-left: 3px;
+  color: #007fff;
+}
+ */

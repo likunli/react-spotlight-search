@@ -12,7 +12,7 @@ export const userService = {
     data: data
   }),
 
-  checkSession: (data: any): Promise<any> => request({
+  checkSession: (): Promise<any> => request({
     url: `/api/session`
   }),
 

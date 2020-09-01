@@ -1,0 +1,24 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-modal .modal-content {
+  padding: 2rem;
+  width: 20.5rem;
+  position: relative;
+  max-width: 100%;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10px;
+}

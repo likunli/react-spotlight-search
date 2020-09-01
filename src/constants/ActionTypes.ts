@@ -1,6 +1,8 @@
 
 export enum ActionTypes {
-  LOGIN = 'Login',
-  LOGOUT = 'Logout',
-  CHANGE_THEME = 'ChangeTheme',
+  LOGIN = 'LOGIN',
+  LOGOUT = 'LOGOUT',
+  CHANGE_THEME = 'CHANGE_THEME',
+  SHOW_AUTH_MODAL = 'SHOW_AUTH_MODAL',
+  HIDE_AUTH_MODAL = 'HIDE_AUTH_MODAL'
 }

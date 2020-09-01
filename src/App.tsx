@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { changeTheme } from './redux/actions';
 import { Route } from 'react-router-dom';
 import { AppTheme } from './constants/AppTheme';
 import Header from './components/common/Header';
@@ -10,6 +9,9 @@ import HomePageView from './components/HomePageView';
 import ThreadListView from './components/ThreadListView';
 import ThreadDetailView from './components/thread/ThreadDetailView';
 import './css/App.css';
+import AuthModal from './components/common/AuthModal';
+import { userService } from './services/userService';
+import { loginAction, logoutAction } from './redux/actions';
 
 interface Props { }
 
@@ -17,11 +19,18 @@ const App: React.FC<Props> = () => {
 
   const dispatch = useDispatch();
 
-  const theme = useSelector((state: IState): AppTheme => state.theme);
+  useEffect(() => { checkLoginStatus() }, []);
 
-  // const onClick = (): void => {
-  //   dispatch(changeTheme(currentTheme === AppTheme.DARK ? AppTheme.LIGHT : AppTheme.DARK));
-  // }
+  const checkLoginStatus = async (): Promise<void> => {
+    try {
+      const response = await userService.checkSession();
+      console.log(response);
+      const {username} = response.data;
+      dispatch(loginAction(username));
+    } catch (e) {
+      dispatch(logoutAction());
+    }
+  }
 
   return (
     <div className="App">
@@ -32,6 +41,7 @@ const App: React.FC<Props> = () => {
         <Route path="/thread/:id" exact component={ThreadDetailView} />
       </section>
       <Footer />
+      <AuthModal />
     </div>
   );
 }
