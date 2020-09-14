@@ -1,5 +1,5 @@
-# typescript-react-redux-express-demo
-a simple full-stack REST web application built in TypeScript, React, Redux and Express.js
+# react-spotlight-search
+
 
 
 
