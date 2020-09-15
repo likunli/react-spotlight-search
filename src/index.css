@@ -1,0 +1,28 @@
+
+:root {
+  --background-color: #e4e7e9;
+  --border-color: #aeafaf;
+  --fill-color: #635D5C;
+  --heading-color: #292922;
+  --text-color: #606162;
+  --primary-color: #333435;
+  --secondary-color: #c8cacc;
+  font-size: 14px;
+}
+
+body {
+  /* background-image: url("./assets/background-spotlight.jpeg"); */
+  background-color: rgb(78, 216, 151);
+  background-size: cover;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

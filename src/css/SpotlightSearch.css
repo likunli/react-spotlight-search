@@ -1,0 +1,40 @@
+.spotlight {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin: 10rem 0;
+  border-radius: 0.5rem;
+  width: 40rem;
+  background-color: var(--background-color);
+  box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.24);
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+}
+
+.spotlight-search-bar {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem;
+  height: 3rem;
+}
+
+.spotlight-search-bar input:focus {
+  outline: none;
+}
+
+.spotlight-search-bar input {
+  flex: auto;
+  background-color: var(--background-color);
+  border: none;
+  max-width: 40rem;
+  font-size: 1.5rem;
+}
+
+.search-bar-selected-item-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
