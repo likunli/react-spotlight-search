@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-spotlight-search/static/css/main.9c7ee562.chunk.css",
+    "main.js": "/react-spotlight-search/static/js/main.7d230496.chunk.js",
+    "main.js.map": "/react-spotlight-search/static/js/main.7d230496.chunk.js.map",
+    "runtime-main.js": "/react-spotlight-search/static/js/runtime-main.cd3f3fa6.js",
+    "runtime-main.js.map": "/react-spotlight-search/static/js/runtime-main.cd3f3fa6.js.map",
+    "static/js/2.3ba83300.chunk.js": "/react-spotlight-search/static/js/2.3ba83300.chunk.js",
+    "static/js/2.3ba83300.chunk.js.map": "/react-spotlight-search/static/js/2.3ba83300.chunk.js.map",
+    "index.html": "/react-spotlight-search/index.html",
+    "precache-manifest.f84fcaed8a646d3e37213cb34f7dfc96.js": "/react-spotlight-search/precache-manifest.f84fcaed8a646d3e37213cb34f7dfc96.js",
+    "service-worker.js": "/react-spotlight-search/service-worker.js",
+    "static/css/main.9c7ee562.chunk.css.map": "/react-spotlight-search/static/css/main.9c7ee562.chunk.css.map",
+    "static/js/2.3ba83300.chunk.js.LICENSE.txt": "/react-spotlight-search/static/js/2.3ba83300.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd3f3fa6.js",
+    "static/js/2.3ba83300.chunk.js",
+    "static/css/main.9c7ee562.chunk.css",
+    "static/js/main.7d230496.chunk.js"
+  ]
+}
